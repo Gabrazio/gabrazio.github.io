@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(../font/Poppins/Poppins-Light.ttf);
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    font-family: Poppins;
+    background: black;
+    user-select: none;
+}
+
+.card {
+    border-style: inset;
+    border-radius: 0.9rem;
+    padding: 5vw;
+    text-align: center;
+    background: rgb(255, 255, 255);
+}
+
+.nickname {
+    font-size: 5vw;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.nickname ~ div {
+    font-size: 3.5vw;
+}
+
+.card div {
+    margin-bottom: 1rem;
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: purple;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.telegram {
+    display: inline-block;
+}
+
+.github {
+    display: inline-block;
+}
+
+.social img {
+    width: 5vw;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+}
+
+@keyframes big {
+    0% {width: 5vw;}
+    100% {width: 7vw;}
+}
+
+@keyframes small {
+    0% {width: 7vw;}
+    100% {width: 5vw;}
+}
+
+.social img:hover {
+    cursor: pointer;
+    animation-name: big;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+.social img:not(:hover) {
+    animation-name: small;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
