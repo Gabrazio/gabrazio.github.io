@@ -69,6 +69,18 @@ body, html {
     color: purple;
 }
 
+.telegram {
+    background-image: url(../img/telegram.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.github {
+    background-image: url(../img/github.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 .social {
     display: flex;
     flex-direction: row;
@@ -84,29 +96,29 @@ body, html {
     display: inline-block;
 }
 
-.social img {
+.social nav div {
     margin-top: 2vw;
     margin-left: 2vw;
 }
 
 @keyframes big {
-    0% {width: 10vw;}
-    100% {width: 13vw;}
+    0% {width: 10vw; height: 10vw;}
+    100% {width: 13vw; height: 13vw;}
 }
 
 @keyframes small {
-    0% {width: 13vw;}
-    100% {width: 10vw;}
+    0% {width: 13vw; height: 13vw;}
+    100% {width: 10vw; height: 10vw;}
 }
 
-.social img:hover {
+.social nav div:hover {
     cursor: pointer;
     animation-name: big;
     animation-duration: 0.2s;
     animation-fill-mode: forwards;
 }
 
-.social img:not(:hover) {
+.social nav div:not(:hover) {
     animation-name: small;
     animation-duration: 0.2s;
     animation-fill-mode: forwards;
@@ -141,18 +153,18 @@ body, html {
         margin-bottom: 1vw;
     }
 
-    .social img {
+    .social nav div {
         margin-top: 1vw;
         margin-left: 1vw;
     }
     
     @keyframes big {
-        0% {width: 5vw;}
-        100% {width: 7vw;}
+        0% {width: 5vw; height: 5vw;}
+        100% {width: 7vw; height: 7vw;}
     }
     
     @keyframes small {
-        0% {width: 7vw;}
-        100% {width: 5vw;}
+        0% {width: 7vw; height: 7vw;}
+        100% {width: 5vw; height: 5vw;}
     }
 }
