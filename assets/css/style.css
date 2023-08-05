@@ -26,17 +26,17 @@ body, html {
 }
 
 .nickname {
-    font-size: 5vw;
+    font-size: 13vw;
     font-weight: 900;
     text-transform: uppercase;
 }
 
 .nickname ~ div {
-    font-size: 3.5vw;
+    font-size: 5vw;
 }
 
 .card div {
-    margin-bottom: 1rem;
+    margin-bottom: 2vw;
 }
 
 .location {
@@ -62,19 +62,18 @@ body, html {
 }
 
 .social img {
-    width: 5vw;
-    margin-top: 1rem;
-    margin-left: 0.5rem;
+    margin-top: 2vw;
+    margin-left: 2vw;
 }
 
 @keyframes big {
-    0% {width: 5vw;}
-    100% {width: 7vw;}
+    0% {width: 10vw;}
+    100% {width: 13vw;}
 }
 
 @keyframes small {
-    0% {width: 7vw;}
-    100% {width: 5vw;}
+    0% {width: 13vw;}
+    100% {width: 10vw;}
 }
 
 .social img:hover {
@@ -88,4 +87,49 @@ body, html {
     animation-name: small;
     animation-duration: 0.2s;
     animation-fill-mode: forwards;
+}
+
+@media screen and (max-height: 300px) {
+    .card {
+        display: none;
+    }
+
+    body::after {
+        color: white;
+        content: "For a better experience, please rotate your device.";
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .card {
+        border-radius: 0.9rem;
+        padding: 2.5vw;
+    }
+    
+    .nickname {
+        font-size: 5vw;
+    }
+    
+    .nickname ~ div {
+        font-size: 3.5vw;
+    }
+    
+    .card div {
+        margin-bottom: 1vw;
+    }
+    
+    .social img {
+        margin-top: 1vw;
+        margin-left: 1vw;
+    }
+    
+    @keyframes big {
+        0% {width: 5vw;}
+        100% {width: 7vw;}
+    }
+    
+    @keyframes small {
+        0% {width: 7vw;}
+        100% {width: 5vw;}
+    }
 }
