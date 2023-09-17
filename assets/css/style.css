@@ -100,7 +100,7 @@ body::-webkit-scrollbar-thumb {
     padding: 0.5rem;
     max-width: 10rem;
     width: 100%;
-    background-color: azure;
+    background-color: white;
     border-radius: 0.5rem;
     padding: 0.6rem;
     font-size: 1.2rem;
