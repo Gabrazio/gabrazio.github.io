@@ -74,6 +74,7 @@ body::-webkit-scrollbar-thumb {
     color: white;
     margin: 0;
     text-transform: uppercase;
+    font-size: 2.5rem;
 }
 
 #title {
