@@ -3,6 +3,10 @@
     src: url("../font/static/JosefinSans-Regular.ttf");
 }
 
+* {
+    box-sizing: border-box;
+}
+
 html, body {
     display: flex;
     flex-direction: column;
@@ -13,10 +17,6 @@ html, body {
     width: 100%;
     background-color: #333333;
     overflow-x: hidden;
-}
-
-body {
-    box-sizing: border-box;
 }
 
 .section {
