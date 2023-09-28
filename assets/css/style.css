@@ -42,8 +42,8 @@ html, body {
     background-repeat: no-repeat;
     border-radius: 0.5rem;
     margin: 0;
-    width: 8rem;
-    height: 8rem;
+    width: 40vw;
+    height: 40vw;
     margin-bottom: 0.5rem;
 }
 
@@ -68,14 +68,14 @@ html, body {
     color: white;
     margin: 0;
     text-transform: uppercase;
-    font-size: 2.5rem;
+    font-size: 12vw;
 }
 
 #title {
     color: white;
     text-transform: uppercase;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 8vw;
 }
 
 #list {
@@ -94,12 +94,12 @@ html, body {
     border: black solid 0.1rem;
     margin-bottom: 0.8rem;
     padding: 0.5rem;
-    max-width: 10rem;
     width: 100%;
     background-color: white;
     border-radius: 0.5rem;
-    padding: 0.6rem;
-    font-size: 1.2rem;
+    padding: calc(5vw - 1vh);
+    font-size: 5vw;
+    max-width: 45vw;
 }
 
 .item:hover {
@@ -111,21 +111,23 @@ html, body {
 /* TABLET */
 @media screen and (min-width: 481px) {
     #img {
-        width: 10rem;
-        height: 10rem;
+        width: 30vw;
+        height: 30vw;
     }
 
     #nickname {
-        font-size: 3rem;
+        font-size: 9vw;
     }
-
+    
     #title {
-        font-size: 2rem;
+        font-size: 7vw;
     }
-
+    
     .item {
-        font-size: 1.4rem;
+        font-size: 4vw;
         max-width: 15rem;
+        padding: calc(5vw - 1vh);
+        max-width: 40vw;
     }
 
     body::-webkit-scrollbar {
@@ -142,20 +144,21 @@ html, body {
 /* DESKTOP */
 @media screen and (min-width: 1025px) {
     #img {
-        width: 13rem;
-        height: 13em;
+        width: 15vw;
+        height: 15vw;
     }
 
     #nickname {
-        font-size: 4rem;
+        font-size: 5vw;
     }
 
     #title {
-        font-size: 2.5rem;
+        font-size: 3.5vw;
     }
 
     .item {
-        font-size: 1.9rem;
-        max-width: 18rem;
+        font-size: 2vw;
+        max-width: 20vw;
+        padding: calc(2vw - 1vh);
     }
 }
