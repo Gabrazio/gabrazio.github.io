@@ -124,9 +124,9 @@ html, body {
     }
     
     .item {
-        font-size: 4vw;
+        font-size: 3.5vw;
         max-width: 15rem;
-        padding: calc(5vw - 1vh);
+        padding: 3vw;
         max-width: 40vw;
     }
 
@@ -157,8 +157,8 @@ html, body {
     }
 
     .item {
-        font-size: 2vw;
+        font-size: 1.5vw;
         max-width: 20vw;
-        padding: calc(2vw - 1vh);
+        padding: 1vw;
     }
 }
