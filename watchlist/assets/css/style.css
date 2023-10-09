@@ -1,0 +1,101 @@
+@font-face {
+    font-family: PaytoneOne;
+    src: url("../font/PaytoneOne-Regular.ttf");
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+* {
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html, body {
+    font-family: PaytoneOne;
+    background-color: black;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: Lobster;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    text-transform: uppercase;
+    padding: 0.5rem;
+    border: 2px dotted;
+    margin: 0;
+    display: inline-block;
+    color: white;
+    color: yellow;
+}
+
+h3 {
+    margin-bottom: 0;
+    color: lime;
+}
+
+hr {
+    width: 50%;
+}
+
+header hr {
+    width: 100%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.list{
+    color: white;
+    list-style: none;
+    text-align: center;
+}
+
+.list span {
+    display: block;
+}
+
+.anime, .tv-series {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  
+
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {  
+
+}
