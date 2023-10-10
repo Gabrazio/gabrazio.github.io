@@ -22,19 +22,10 @@ section {
 }
 
 h1 {
-    font-family: Lobster;
-    text-transform: uppercase;
-    text-align: center;
-    color: white;
-}
-
-h2 {
     text-transform: uppercase;
     padding: 0.5rem;
-    border: 2px dotted;
     margin: 0;
     display: inline-block;
-    color: white;
     color: yellow;
 }
 
