@@ -5,7 +5,9 @@ window.onload = () => {
             let title = array[i];
             
             let new_letter = title[0];
-            let span = document.createElement("span");
+            let name = document.createElement("h4");
+            name.style.fontWeight = "lighter";
+            name.style.margin = 0;
             
             if(new_letter != old_letter){
                 let letter = document.createElement("h3");
@@ -13,8 +15,8 @@ window.onload = () => {
                 letter.textContent = new_letter;
             }
             
-            list.appendChild(span);
-            span.textContent = title;
+            list.appendChild(name);
+            name.textContent = title;
             
 
             old_letter = new_letter;
