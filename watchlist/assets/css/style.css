@@ -12,6 +12,7 @@
 html, body {
     font-family: PaytoneOne;
     background-color: black;
+    margin: 0;
 }
 
 section {
@@ -37,7 +38,7 @@ h3 {
 }
 
 hr {
-    width: 50%;
+    width: 100%;
 }
 
 header hr {
@@ -63,13 +64,9 @@ header {
 }
 
 .anime, .tv-series {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
     text-align: center;
-}
-
-.anime {
-    margin-top: 0;
 }
 
 /* Small devices (landscape phones, 576px and up) */
