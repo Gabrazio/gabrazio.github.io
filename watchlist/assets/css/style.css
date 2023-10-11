@@ -27,6 +27,7 @@ h1 {
     margin: 0;
     display: inline-block;
     color: yellow;
+    text-shadow: red 1.5px 1.5px;
 }
 
 h3 {
