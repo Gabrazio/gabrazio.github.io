@@ -28,6 +28,7 @@ h1 {
     display: inline-block;
     color: yellow;
     text-shadow: red 1.5px 1.5px;
+    font-size: 2rem;
 }
 
 h3 {
