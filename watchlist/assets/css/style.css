@@ -13,7 +13,7 @@ html, body {
     font-family: PaytoneOne;
     background-color: black;
     margin: 0;
-    cursor: url("../cursor/Red\ Glowing\ Cursor.cur"), pointer;
+    cursor: url("../cursor/SmoothArrow.cur"), pointer;
 }
 
 section {
