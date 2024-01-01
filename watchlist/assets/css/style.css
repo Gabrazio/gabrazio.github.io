@@ -13,6 +13,20 @@ html, body {
     background-color: black;
     margin: 0;
     cursor: url("../cursor/SmoothArrow.cur"), pointer;
+    
+    /* Compatibilità per Mozilla Firefox */
+    scrollbar-color: white;
+    scrollbar-width: 0.5rem;
+    scrollbar-track-color: red;
+}
+
+body::-webkit-scrollbar {
+    width: 0.5rem;
+    background: white;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: red;
 }
 
 section {
