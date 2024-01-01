@@ -64,10 +64,6 @@ header {
     margin-bottom: 1.5rem;
 }
 
-.list span {
-    display: block;
-}
-
 .list h4 {
     user-select: text;
 }
