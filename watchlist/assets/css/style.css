@@ -15,9 +15,8 @@ html, body {
     cursor: url("../cursor/SmoothArrow.cur"), pointer;
     
     /* Compatibilità per Mozilla Firefox */
-    scrollbar-color: white;
+    scrollbar-color: red white;
     scrollbar-width: 0.5rem;
-    scrollbar-track-color: red;
 }
 
 body::-webkit-scrollbar {
