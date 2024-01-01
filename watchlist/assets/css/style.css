@@ -6,7 +6,6 @@
 /* X-Small devices (portrait phones, less than 576px) */
 * {
     box-sizing: border-box;
-    user-select: none;
 }
 
 html, body {
@@ -33,9 +32,13 @@ h1 {
     font-size: 3rem;
 }
 
+section {
+    user-select: none;
+}
+
 h3 {
     margin-bottom: 0;
-    color: lime;
+    color: greenyellow;
 }
 
 hr {
@@ -58,16 +61,29 @@ header {
     color: white;
     list-style: none;
     text-align: center;
+    margin-bottom: 1.5rem;
 }
 
 .list span {
     display: block;
 }
 
+.list h4 {
+    user-select: text;
+}
+
 .anime, .tv-series {
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
     text-align: center;
+    width: 100%;
+}
+
+.anime {
+    background-color: slateblue;
+}
+
+.tv-series {
+    /* background-color: cadetblue; */
+    background-color: cornflowerblue;
 }
 
 /* Small devices (landscape phones, 576px and up) */
