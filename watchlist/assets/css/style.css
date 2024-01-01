@@ -16,7 +16,7 @@ html, body {
     
     /* Compatibilità per Mozilla Firefox */
     scrollbar-color: red white;
-    scrollbar-width: 0.5rem;
+    scrollbar-width: thin;
 }
 
 body::-webkit-scrollbar {
