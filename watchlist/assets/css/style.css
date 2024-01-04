@@ -81,6 +81,10 @@ header {
     user-select: text;
 }
 
+.list h4:hover {
+    cursor: url("../cursor/TextSelect.cur"), text;
+}
+
 .anime, .tv-series {
     text-align: center;
     width: 100%;
