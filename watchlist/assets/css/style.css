@@ -28,7 +28,7 @@ body::-webkit-scrollbar-thumb {
     background-color: red;
 }
 
-section {
+#main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,9 +43,6 @@ h1 {
     color: yellow;
     text-shadow: red 2px 2px;
     font-size: 3rem;
-}
-
-section {
     user-select: none;
 }
 
@@ -80,8 +77,8 @@ header {
     align-items: center;
 }
 
-.list h4 {
-    user-select: text;
+.list h3 {
+    user-select: none;
 }
 
 .list h4:hover {
@@ -94,35 +91,9 @@ header {
 }
 
 .anime {
-    background-color: slateblue;
+    background-color: darkblue;
 }
 
 .tv-series {
-    /* background-color: cadetblue; */
-    background-color: cornflowerblue;
-}
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
-
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {  
-
-}
-
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  
-
-}
-
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {  
-
+    background-color: dodgerblue;
 }
