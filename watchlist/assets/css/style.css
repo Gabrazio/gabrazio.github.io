@@ -85,7 +85,7 @@ header {
     cursor: url("../cursor/TextSelect.cur"), text;
 }
 
-.anime, .tv-series {
+.anime, .tv-series, .film {
     text-align: center;
     width: 100%;
 }
@@ -96,4 +96,8 @@ header {
 
 .tv-series {
     background-color: dodgerblue;
+}
+
+.film {
+    background-color: blueviolet;
 }
