@@ -6,7 +6,7 @@ window.onload = () => {
 
     let homeButton = document.getElementById("home");
     homeButton.onclick = () => {
-        location.href = "index.html";
+        location.href = "https://gabrazio.github.io";
     }
 
     let img = document.getElementById("img");
