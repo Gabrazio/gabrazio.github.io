@@ -59,6 +59,7 @@ section {
     font-family: Comfortaa;
     color: white;
     background-color: #372549;
+    user-select: none;
 }
 
 section h1 {
