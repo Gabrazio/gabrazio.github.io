@@ -2,3 +2,48 @@ section ul li:hover {
     color: #B75D69;
     cursor: pointer;
 }
+
+#social {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+}
+
+#social div {
+    margin: calc(1rem + 0.5vw);
+    width: calc(5rem + 2vw);
+    height: calc(5rem + 2vw);
+    border-radius: 1rem;
+}
+
+#social div {
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 2px solid black;
+}
+
+#social div:hover {
+    cursor: pointer;
+}
+
+#social #telegram {
+    background-image: url(../img/telegram.webp);
+}
+
+#social #instagram {
+    background-image: url(../img/instagram.webp);
+}
+
+#social #github {
+    background-image: url(../img/github.png)
+}
+
+#social #steam {
+    background-image: url(../img/steam.webp);
+}
+
+@media only screen and (min-width: 768px) {
+    #social {
+        grid-template-columns: 33.3% 33.3% 33.3%;
+    }
+}
