@@ -11,7 +11,6 @@ html, body {
     margin: 0;
     background-color: #1A1423;
     overflow-x: hidden;
-    cursor: url(../cursor/windows-xp/default_arrow.cur), default;
 }
 
 #title {
@@ -38,7 +37,7 @@ nav span {
 }
 
 nav span:hover {
-    cursor: url(../cursor/windows-xp/default_link.cur), pointer;
+    cursor: pointer;
     color: #B75D69;
 }
 
@@ -86,5 +85,5 @@ section h1 {
 }
 
 #img:hover {
-    cursor: url(../cursor/windows-xp/default_helpsel.cur), help;
+    cursor: help;
 }
