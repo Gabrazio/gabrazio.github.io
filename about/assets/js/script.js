@@ -33,4 +33,9 @@ window.onload = () => {
     steamButton.onclick = () => {
         location.href = "https://steamcommunity.com/id/Gabrazio";
     }
+    
+    let discordButton = document.getElementById("discord");
+    discordButton.onclick = () => {
+        location.href = "https://discord.gg/gt2GQbPyPG";
+    }
 }

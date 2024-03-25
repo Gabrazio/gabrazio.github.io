@@ -46,6 +46,10 @@
     background-image: url(../img/steam.webp);
 }
 
+#social #discord {
+    background-image: url(../img/discord.png);
+}
+
 @media only screen and (min-width: 768px) {
     #social {
         grid-template-columns: 33.3% 33.3% 33.3%;
