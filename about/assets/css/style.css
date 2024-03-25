@@ -16,6 +16,7 @@
     background-size: contain;
     border: 2px solid black;
     background-position: center;
+    user-select: none;
 }
 
 @keyframes icon {
