@@ -1,9 +1,4 @@
 window.onload = () => {
-    let projectsButton = document.getElementById("projects");
-    projectsButton.onclick = () => {
-        alert("Coming Soon!");
-    }
-
     let homeButton = document.getElementById("home");
     homeButton.onclick = () => {
         location.href = "https://gabrazio.github.io";
@@ -11,6 +6,11 @@ window.onload = () => {
 
     let aboutButton = document.getElementById("about");
     aboutButton.onclick = () => {
+        location.href = "https://gabrazio.github.io/about";
+    }
+
+    let projectsButton = document.getElementById("projects");
+    projectsButton.onclick = () => {
         alert("Coming Soon!");
     }
 

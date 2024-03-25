@@ -1,0 +1,4 @@
+section ul li:hover {
+    color: #B75D69;
+    cursor: pointer;
+}
