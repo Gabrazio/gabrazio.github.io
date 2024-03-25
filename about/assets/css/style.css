@@ -26,7 +26,7 @@
 #social div:hover {
     cursor: pointer;
     animation-name: icon;
-    animation-duration: 0.3s;
+    animation-duration: 0.1s;
     animation-fill-mode: forwards;
 }
 
