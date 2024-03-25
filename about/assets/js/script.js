@@ -43,4 +43,14 @@ window.onload = () => {
     twitchButton.onclick = () => {
         location.href = "https://www.twitch.tv/gabrazio";
     }
+
+    let redditButton = document.getElementById("reddit");
+    redditButton.onclick = () => {
+        location.href = "https://www.reddit.com/user/gabrazio";
+    }
+
+    let spotifyButton = document.getElementById("spotify");
+    spotifyButton.onclick = () => {
+        location.href = "https://open.spotify.com/user/315tjw2pqcnsvba6b3ggadalmzme";
+    }
 }

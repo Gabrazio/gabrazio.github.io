@@ -1,7 +1,8 @@
 #social {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: repeat(auto-fill, minmax(calc(7rem + 2vw), 1fr));
     justify-items: center;
+    gap: calc(1rem + 0.5vw);
 }
 
 #social div {
@@ -55,8 +56,10 @@
     background-image: url(../img/twitch.png);
 }
 
-@media only screen and (min-width: 768px) {
-    #social {
-        grid-template-columns: 33.3% 33.3% 33.3%;
-    }
+#social #reddit {
+    background-image: url(../img/reddit.png);
+}
+
+#social #spotify {
+    background-image: url(../img/spotify.png)
 }
