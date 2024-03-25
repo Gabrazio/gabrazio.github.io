@@ -88,7 +88,3 @@ section h1 {
 #img:hover {
     cursor: help;
 }
-
-section ul li:first-child ~ li{
-    margin-top: calc(0.4rem + 0.5vw);
-}
