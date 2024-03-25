@@ -38,4 +38,9 @@ window.onload = () => {
     discordButton.onclick = () => {
         location.href = "https://discord.gg/gt2GQbPyPG";
     }
+
+    let twitchButton = document.getElementById("twitch");
+    twitchButton.onclick = () => {
+        location.href = "https://www.twitch.tv/gabrazio";
+    }
 }
