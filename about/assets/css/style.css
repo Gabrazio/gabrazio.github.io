@@ -32,34 +32,34 @@
     animation-fill-mode: forwards;
 }
 
-#social #telegram {
+#telegram {
     background-image: url(../img/telegram.webp);
 }
 
-#social #instagram {
+#instagram {
     background-image: url(../img/instagram.webp);
 }
 
-#social #github {
+#github {
     background-image: url(../img/github.png)
 }
 
-#social #steam {
+#steam {
     background-image: url(../img/steam.webp);
 }
 
-#social #discord {
+#discord {
     background-image: url(../img/discord.png);
 }
 
-#social #twitch {
+#twitch {
     background-image: url(../img/twitch.png);
 }
 
-#social #reddit {
+#reddit {
     background-image: url(../img/reddit.png);
 }
 
-#social #spotify {
+#spotify {
     background-image: url(../img/spotify.png)
 }
