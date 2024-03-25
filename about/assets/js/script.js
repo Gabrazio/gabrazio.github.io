@@ -1,4 +1,9 @@
 window.onload = () => {
+    let cityButton = document.getElementById("city");
+    cityButton.onclick = () => {
+        location.href = "https://en.wikipedia.org/wiki/Patern%C3%B2";
+    }
+    
     let homeButton = document.getElementById("home");
     homeButton.onclick = () => {
         location.href = "https://gabrazio.github.io";

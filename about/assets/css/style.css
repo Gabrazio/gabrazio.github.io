@@ -5,6 +5,11 @@
     gap: calc(1rem + 0.5vw);
 }
 
+#city:hover {
+    cursor: pointer;
+    color: #B75D69;
+}
+
 #social div {
     margin: calc(1rem + 0.5vw);
     width: calc(5rem + 2vw);
