@@ -3,21 +3,6 @@ window.onload = () => {
     cityButton.onclick = () => {
         location.href = "https://en.wikipedia.org/wiki/Patern%C3%B2";
     }
-    
-    let homeButton = document.getElementById("home");
-    homeButton.onclick = () => {
-        location.href = "https://gabrazio.github.io";
-    }
-
-    let aboutButton = document.getElementById("about");
-    aboutButton.onclick = () => {
-        location.href = "https://gabrazio.github.io/about";
-    }
-
-    let projectsButton = document.getElementById("projects");
-    projectsButton.onclick = () => {
-        alert("Coming Soon!");
-    }
 
     let telegramButton = document.getElementById("telegram");
     telegramButton.onclick = () => {
