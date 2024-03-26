@@ -12,6 +12,17 @@ html, body {
     background-color: #1A1423;
     overflow-x: hidden;
     cursor: url(../cursor/sym780.cur), default;
+    scrollbar-color: #B75D69 #1A1423;
+    scrollbar-width: thin;
+}
+
+body::-webkit-scrollbar {
+    background-color: #1A1423;
+    width: calc(0.2rem + 0.5vw);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #B75D69;
 }
 
 #title {
