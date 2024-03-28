@@ -26,7 +26,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 #title {
-    display: block;
     color: white;
     font-size: calc(3rem + 0.5vw);
     text-transform: uppercase; 
