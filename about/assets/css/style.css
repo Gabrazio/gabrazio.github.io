@@ -1,7 +1,3 @@
-@keyframes zoom-in {
-    100% {transition: transform 0.3s ease; transform: scale(1.2);}
-}
-
 #social {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(calc(7rem + 2vw), 1fr));

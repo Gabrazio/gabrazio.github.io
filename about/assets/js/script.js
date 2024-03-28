@@ -1,9 +1,4 @@
 window.onload = () => {
-    let cityButton = document.getElementById("city");
-    cityButton.onclick = () => {
-        location.href = "https://en.wikipedia.org/wiki/Patern%C3%B2";
-    }
-
     let telegramButton = document.getElementById("telegram");
     telegramButton.onclick = () => {
         location.href = "https://t.me/Gabrazio";
