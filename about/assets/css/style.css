@@ -3,6 +3,7 @@
     grid-template-columns: repeat(auto-fill, minmax(calc(7rem + 2vw), 1fr));
     justify-items: center;
     gap: calc(1rem + 0.5vw);
+    overflow: hidden;
 }
 
 #city:hover {
@@ -25,8 +26,7 @@
 }
 
 @keyframes zoom-icon {
-    0% {width: calc(5rem + 2vw); height: calc(5rem + 2vw);}
-    100% {width: calc(calc(5rem + 2vw) + 10%); height: calc(calc(5rem + 2vw) + 10%); background-size: calc(calc(5rem + 2vw) + 20%);}
+    100% {transition: transform 0.3s ease; transform: scale(1.2);}
 }
 
 #social div:hover {
