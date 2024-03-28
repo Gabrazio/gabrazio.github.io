@@ -1,3 +1,7 @@
+@keyframes zoom-in {
+    100% {transition: transform 0.3s ease; transform: scale(1.2);}
+}
+
 #social {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(calc(7rem + 2vw), 1fr));
@@ -8,6 +12,9 @@
 
 #city:hover {
     color: #B75D69;
+    animation-name: zoom-in;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
 }
 
 #social div {
@@ -25,12 +32,8 @@
     user-select: none;
 }
 
-@keyframes zoom-icon {
-    100% {transition: transform 0.3s ease; transform: scale(1.2);}
-}
-
 #social div:hover {
-    animation-name: zoom-icon;
+    animation-name: zoom-in;
     animation-duration: 0.1s;
     animation-fill-mode: forwards;
 }
