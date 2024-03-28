@@ -25,8 +25,8 @@
 }
 
 @keyframes zoom-icon {
-    0% {width: calc(5rem + 2vw); height: calc(5rem + 2vw);}
-    100% {width: calc(calc(5rem + 2vw) + 10%); height: calc(calc(5rem + 2vw) + 10%);}
+    0% {width: calc(5rem + 2vw); height: calc(5rem + 2vw); background-size: 100%;}
+    100% {width: calc(calc(5rem + 2vw) + 10%); height: calc(calc(5rem + 2vw) + 10%); background-size: 110%;}
 }
 
 #social div:hover {
