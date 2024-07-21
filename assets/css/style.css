@@ -3,6 +3,11 @@
     src: url(../font/Trispace/Trispace-VariableFont_wdth\,wght.ttf);
 }
 
+@font-face {
+    font-family: Trispace Thin;
+    src: url(../font/Trispace/static/Trispace_SemiExpanded-ExtraBold.ttf);
+}
+
 * {
     box-sizing: border-box;
     font-family: Trispace;
@@ -11,52 +16,62 @@
 html, body {
     margin: 0;
     background: gray;
-    background-image: url(../img/9074811.jpg)
+    background-image: url(../img/9074811.jpg);
+    
+}
+
+body {
+    font-size: calc(0.2rem + 0.5vw);
 }
 
 .main {
     display: grid;
-    grid-template-columns: 0.5fr 4fr 0.5fr;
+    display: -moz-grid;
+    display: -ms-grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+    width: 100%;
 }
 
 .header {
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    display: grid;
-    grid-template-columns: 0.5fr 4fr 0.5fr;
-}
-
-.container {
-    padding: 1rem;
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-content: center;
-    background-color: #311842
+    justify-content: center;
+    background-color: #311842;
+    align-self: center;
+    justify-self: center;
 }
 
-.container .title {
-    text-transform: uppercase;
-    font-weight: bolder;
+.header .title {
+    font-family: Trispace Thin;
     user-select: none;
-    font-size: 3.5rem;
+    text-transform: uppercase;
     color: #F4BB47;
+    font-size: calc(6rem + 0.5vw);
+    justify-self: center;
+    align-self: center;
+    margin: 0;
+    padding-top: calc(1rem + 0.5vw);
+    padding-left: calc(1rem + 0.5vw);
+    padding-right: calc(1rem + 0.5vw);
 }
 
 .nav {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin: 0;
     display: flex;
-    justify-content: flex-end;
     align-content: center;
+    justify-content: center;
     width: 100%;
 }
 
 .nav .button {
     user-select: none;
-    margin-left: 2rem;
+    margin-left: calc(1rem + 0.5vw);
+    margin-right: calc(1rem + 0.5vw);
     color: #F4BB47;
     align-self: center;
+    font-size: calc(1.5rem + 0.5vw);
 }
 
 .nav .button:hover {
@@ -68,13 +83,20 @@ html, body {
     display: flex;
     justify-content: space-between;
     background: #F4BB47;
-    padding: 1rem;
+    padding: calc(1rem + 0.5vw);
     display: block;
     width: 100%;
 }
 
 .article .title {
-    font-size: 1.5rem;
+    
+    font-size: calc(2.5rem + 0.5vw);
+    margin: 0;
+}
+
+.article p {
+    margin: 0;
+    font-size: calc(1.5rem + 0.5vw);
 }
 
 .center {
@@ -82,7 +104,12 @@ html, body {
     width: 100%;
 }
 
-.move {
-    position: sticky;
-    top: 10px;
+.left {
+    display: block;
+    min-width: calc(3rem + 0.5vw);
+}
+
+.right {
+    display: block;
+    min-width: calc(3rem + 0.5vw);
 }
