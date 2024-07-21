@@ -17,7 +17,19 @@ html, body {
     margin: 0;
     background: gray;
     background-image: url(../img/9074811.jpg);
-    
+}
+
+body {
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #F4BB47;
+}
+
+body::-webkit-scrollbar {
+    width: 0.5rem;
+    background: #311842;
 }
 
 body {
@@ -69,7 +81,7 @@ body {
     user-select: none;
     margin-left: calc(1rem + 0.5vw);
     margin-right: calc(1rem + 0.5vw);
-    color: #F4BB47;
+    color: white;
     align-self: center;
     font-size: calc(1.5rem + 0.5vw);
 }
@@ -112,4 +124,52 @@ body {
 .right {
     display: block;
     min-width: calc(3rem + 0.5vw);
+}
+
+.article .title {
+    margin-top: calc(1rem + 0.5vw);
+}
+
+.article .title:first-child {
+    margin-top: 0;
+}
+
+.menu {
+    position: absolute;
+    top: 1;
+    display: none;
+    align-self: center;
+    z-index: 1;
+    color: white;
+    background: #311842;;
+}
+
+.button:nth-child(4) {
+    position: relative;
+}
+
+.button:nth-child(4)::after {
+    content: " ▶";
+}
+
+.button:nth-child(4):hover::after {
+    content: " ▼"
+}
+
+.button:nth-child(4):hover > .menu {
+    display: block;
+}
+
+.menu ul li {
+    list-style-type: none;
+    padding: calc(0.5rem + 0.5vw);
+}
+
+.menu ul li:hover {
+    color: red;
+}
+
+.menu ul {
+    padding: 0;
+    margin: 0;
 }
