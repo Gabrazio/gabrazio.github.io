@@ -66,6 +66,7 @@ html, body {
 
 .article {
     display: flex;
+    justify-content: space-between;
     background: #F4BB47;
     padding: 1rem;
     display: block;
