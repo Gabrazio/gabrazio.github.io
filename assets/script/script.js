@@ -10,6 +10,10 @@ window.onload = () => {
     var socialButton = document.getElementById("social");
     var projectsButton = document.getElementById("projects");
 
+    homeButton.onclick = () => {
+        window.location.href = "index.html";
+    }
+
     aboutButton.onclick = () => {
         alert("COMING SOON");
     }
