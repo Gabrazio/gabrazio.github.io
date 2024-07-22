@@ -25,6 +25,7 @@ body {
     overflow-x: hidden;
     scrollbar-color: #F4BB47 #311842;
     scrollbar-width: thin;
+    font-size: clamp(16px, 1vw + 1rem, 24px);
 }
 
 body::-webkit-scrollbar-thumb {
@@ -34,10 +35,6 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar {
     width: 0.5rem;
     background: #311842;
-}
-
-body {
-    font-size: calc(0.2rem + 0.5vw);
 }
 
 .main {
@@ -98,6 +95,7 @@ body {
 }
 
 .article {
+    margin-top: calc(2rem + 0.5vw);
     display: flex;
     justify-content: space-between;
     background: #F4BB47;
@@ -117,8 +115,9 @@ body {
 }
 
 .center {
-    background: #F4BB47;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .article .title {
@@ -171,4 +170,63 @@ body {
 .menu ul {
     padding: 0;
     margin: 0;
+}
+
+#meme {
+    justify-self: center;
+    align-self: center;
+    margin-top: calc(2rem + 0.5vw);
+    margin-bottom: calc(2rem + 0.5vw);
+    display: inline-block;
+    width: calc(45rem + 0.5vw);
+    height: calc(45rem + 0.5vw);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .header .title {
+        font-size: calc(4rem + 0.5vw);
+    }
+
+    .nav .button {
+        font-size: calc(1rem + 0.5vw);
+    }
+
+    .article .title {
+        font-size: calc(1.3em + 0.5vw);
+    }
+
+    .article p {
+        font-size: calc(1rem + 0.5vw);
+    }
+
+    #meme {
+        width: calc(25rem + 0.5vw);
+        height: calc(25rem + 0.5vw);
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .header .title {
+        font-size: calc(5rem + 0.5vw);
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+
 }
