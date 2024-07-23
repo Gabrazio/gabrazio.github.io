@@ -22,9 +22,8 @@
     user-select: none;
     outline: none;
     -webkit-tap-highlight-color: transparent;
-
     animation-name: zoom;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
 }
 
 html, body {
