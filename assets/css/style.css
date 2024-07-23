@@ -17,8 +17,22 @@
 
 html, body {
     margin: 0;
-    background: gray;
     background-image: url(../img/9074811.jpg);
+}
+
+body {
+    overflow-x: hidden;
+    scrollbar-color: #F4BB47 #311842;
+    scrollbar-width: thin;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #F4BB47;
+}
+
+body::-webkit-scrollbar {
+    width: 0.5rem;
+    background: #311842;
 }
 
 .main {
@@ -147,19 +161,7 @@ html, body {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     body {
-        overflow-x: hidden;
-        scrollbar-color: #F4BB47 #311842;
-        scrollbar-width: thin;
         font-size: clamp(16px, 1vw + 1rem, 24px);
-    }
-    
-    body::-webkit-scrollbar-thumb {
-        background: #F4BB47;
-    }
-    
-    body::-webkit-scrollbar {
-        width: 0.5rem;
-        background: #311842;
     }
 
     .main {
@@ -185,7 +187,7 @@ html, body {
     }
 
     .header .title {
-        font-size: calc(4rem + 0.5vw);
+        /*font-size: calc(4rem + 0.5vw);*/
         justify-self: center;
         align-self: center;
         margin: 0;
