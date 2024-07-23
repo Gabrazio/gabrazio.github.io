@@ -26,9 +26,33 @@
     animation-duration: 0.5s;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:active {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #FFC857;
+}
+
 html, body {
     margin: 0;
-    background-color: #0D1821;
+    background-color: #1F2041;
     text-align: center;
 }
 
@@ -38,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
 
 header {
     text-align: center;
-    background-color: #0D1821;
+    background-color: #1F2041;
     color: white;
 }
 
@@ -62,13 +86,12 @@ nav {
     font-family: Poppins-Regular;
 }
 
-.button:nth-child(4)::after {
-    content: " ▷";
+.button:hover {
+    cursor: pointer;
 }
 
-.button:hover {
-    text-decoration: underline;
-    cursor: pointer;
+.button:nth-child(4)::after {
+    content: " ▷";
 }
 
 .button:nth-child(4) {
@@ -89,7 +112,7 @@ nav {
     display: none;
     position: absolute;
     z-index: 1;
-    background-color: #0D1821;
+    background-color: #1F2041;
 }
 
 .menu ul {
@@ -100,10 +123,11 @@ nav {
 
 .menu ul li {
     padding: 0.5rem;
+    color: white;
 }
 
 .menu ul li:hover {
-    color: yellow;
+    color: #FFC857;
 }
 
 p {
@@ -119,7 +143,7 @@ article section h2 {
 }
 
 article section {
-    background-color: #344966;
+    background-color: #4B3F72;
     text-align: left;
     padding: 1rem;
     color: white;
@@ -135,4 +159,12 @@ article section {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+}
+
+article section section h3 {
+    margin-top: 0;
+}
+
+article section section {
+    background-color: #1F2041;
 }
