@@ -118,6 +118,7 @@ html, body {
 }
 
 .article {
+    margin-top: 1rem;
     background: #F4BB47;
     padding: 1rem;
 }
