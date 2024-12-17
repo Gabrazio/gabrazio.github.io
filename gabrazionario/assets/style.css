@@ -7,11 +7,16 @@ body {
     background-color: gainsboro;
 }
 
+@font-face {
+    font-family: LibreBaskerville-Bold;
+    src: url(../assets/font/Libre_Baskerville/LibreBaskerville-Bold.ttf);
+}
+
 .header {
     user-select: none;
     display: flex;
     justify-content: left;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: LibreBaskerville-Bold;
     padding: 1rem;
     background-color: navy;
 }
