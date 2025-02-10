@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url(../image/wallpapersden.com_artistic-pixel-art-hd-space_1920x1080.jpg) repeat-x;
+    background-size: cover;
+}
+
+
+@font-face {
+    font-family: PressStart2P;
+    src: url(../font/Press_Start_2P/PressStart2P-Regular.ttf);
+}
+
+@font-face {
+    font-family: Pixelify;
+    src: url(../font/Pixelify_Sans/PixelifySans-VariableFont_wght.ttf);
+}
+
+#title {
+    color: gold;
+    font-size: 2.5rem;
+    font-family: PressStart2P, sans-serif;
+    align-self: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 1rem;   
+}
+
+.button {
+    font-size: 1.8rem;
+    font-family: Pixelify, sans-serif;
+    text-transform: uppercase;
+    border: 0.1rem black solid;
+    border-radius: 0.5rem;;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    text-align: center;
+    background-color: white;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.button:hover {
+    background: red;
+    color: yellow;
+    cursor: pointer;
+}
