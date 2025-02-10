@@ -112,6 +112,23 @@ body {
     overflow-x: hidden;
     box-sizing: border-box;
     flex-grow: 1;
+    scrollbar-width: thin;
+    scrollbar-color: gold #f1f1f1;
+}
+
+.window .content::-webkit-scrollbar-thumb {
+    background-color: gold; /* Colore della parte che si muove */
+    border-radius: 10px; /* Bordo arrotondato */
+}
+
+.window .content::-webkit-scrollbar-thumb {
+    background-color: gold; /* Colore della parte che si muove */
+    border-radius: 10px; /* Bordo arrotondato */
+}
+
+.window .content::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Colore di sfondo della pista della barra di scorrimento */
+    border-radius: 10px;
 }
 
 .window .content .title {

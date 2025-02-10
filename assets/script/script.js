@@ -269,8 +269,8 @@ function showMenu() {
         const window = new WindowListContent("watchlist", 
             ["Film", "TV Shows"], 
             [
-                ["Madagascar", "John Wick"], // FILM
-                ["Breaking Bad", "Squid Game", "dsads", "dsad", "dsad", "dsad", "dsad", "dsad", "dsad"] // TV SHOWS
+                ["John Wick"], // FILM
+                ["Breaking Bad", "Squid Game"] // TV SHOWS
             ]
         );
         window.display();
