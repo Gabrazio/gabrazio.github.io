@@ -19,7 +19,6 @@ body {
     background-size: cover;
 }
 
-
 @font-face {
     font-family: PressStart2P;
     src: url(../font/Press_Start_2P/PressStart2P-Regular.ttf);
@@ -32,24 +31,23 @@ body {
 
 #title {
     color: gold;
-    font-size: 2.5rem;
+    font-size: clamp(2rem, 5vw, 4rem);
     font-family: PressStart2P, sans-serif;
-    align-self: center;
     font-weight: 600;
     text-transform: uppercase;
-    margin-bottom: 1rem;   
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
 .button {
-    font-size: 1.8rem;
+    font-size: clamp(1.2rem, 3vw, 2.5rem);
     font-family: Pixelify, sans-serif;
     text-transform: uppercase;
     box-shadow: -0.2rem 0 0 0 black,
                 0.2rem 0 0 0 black,
                 0 -0.2rem 0 0 black,
                 0 0.2rem 0 0 black;
-    padding-left: 0.7rem;
-    padding-right: 0.7rem;
+    padding: 0.5rem 1rem;
     font-weight: 400;
     margin-bottom: 1.5rem;
     text-align: center;
@@ -65,8 +63,8 @@ body {
 
 .window {
     position: absolute;
-    width: 75%;
-    max-height: 20rem;
+    width: clamp(40%, 75%, 90%);
+    max-height: 60vh;
     background-color: midnightblue;
     font-family: Pixelify;
     box-shadow: -0.2rem 0 0 0 black,
@@ -95,11 +93,10 @@ body {
 .window .top .close {
     grid-area: close;
     color: red;
-    width: fit-content;
+    cursor: url(../cursor/Smooth/SmoothHand.cur), pointer;
 }
 
 .window .top .close:hover {
-    cursor: url(../cursor/Smooth/SmoothHand.cur), pointer;
     color: gold;
 }
 
@@ -109,7 +106,6 @@ body {
     background-color: white;
     padding: 0.7rem;
     overflow-y: auto;
-    overflow-x: hidden;
     box-sizing: border-box;
     flex-grow: 1;
     scrollbar-width: thin;
@@ -117,78 +113,44 @@ body {
 }
 
 .window .content::-webkit-scrollbar-thumb {
-    background-color: gold; /* Colore della parte che si muove */
-    border-radius: 10px; /* Bordo arrotondato */
-}
-
-.window .content::-webkit-scrollbar-thumb {
-    background-color: gold; /* Colore della parte che si muove */
-    border-radius: 10px; /* Bordo arrotondato */
+    background-color: gold;
+    border-radius: 10px;
 }
 
 .window .content::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Colore di sfondo della pista della barra di scorrimento */
+    background: #f1f1f1;
     border-radius: 10px;
 }
 
 .window .content .title {
-    font-size: 1.8rem;
+    font-size: clamp(1.5rem, 3vw, 2.1rem);
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: underline;
 }
 
 .window .content .list {
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
 }
 
 .window .content .list ul {
     margin-top: 0.5rem;
 }
 
-@media screen and (max-height: 400px) {
+@media (max-width: 200px), (max-height: 400px) {
     #title {
         display: none;
     }
-
-    .window {
-        width: 50%;
-        height: 75%;
-    }
-}
-
-@media screen and (min-width: 650px) {
-    #title {
-        font-size: 3.5rem;
-    }
-
-    .window {
-        width: 50%;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    #title {
-        font-size: 4rem;
-    }
-
+    
     .button {
-        font-size: 2.5rem;
-    }
-
-    .window {
-        width: 35%;
-    }
-
-    .window .top .title {
-        font-size: 1.2rem; 
+        font-size: clamp(1.2rem, 3vh, 2.5rem);
     }
 
     .window .content .title {
-        font-size: 2.1rem;
+        font-size: clamp(1.5rem, 3vh, 2.1rem);
     }
-
-    .window .content ul li {
-        font-size: 1.5rem;
+    
+    .window .content .list {
+        font-size: clamp(1rem, 2.5vh, 1.5rem);
     }
 }
