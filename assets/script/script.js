@@ -266,13 +266,16 @@ function showMenu() {
     notes.addEventListener("click", playError);
     projects.addEventListener("click", playError);
     watchlist.addEventListener("click", () => {
-        const window = new WindowListContent("watchlist", 
-            ["Film", "TV Shows"], 
-            [
-                ["John Wick"], // FILM
-                ["Breaking Bad", "Squid Game"] // TV SHOWS
-            ]
-        );
+        let movies = ["Home Alone", "Dead Poets Society", "Rise of the Guardians", "Diary of a Wimpy Kid", "Scott Pilgrim vs. the World", "Wreck-It Ralph", "Kung Fu Panda", "Over the Hedge", "A Christmas Carol", "Elf", "The Polar Express", "How the Grinch Stole Christmas", "John Wick", "Shrek", "Back to the Future", "Jojo Rabbit"];
+        movies.sort();
+        
+        let tvshows = ["Ted", "Spider-Man", "The Matrix", "Deadpool", "A Clockwork Orange", "Yes Man", "The Big Bang Theory", "Malcolm in the Middle", "Breaking Bad", "Squid Game", "The Office"];
+        tvshows.sort();
+
+        let anime = ["Howl's Moving Castle", "To the Forest of Firefly Lights", "Death Note", "Death Parade"];
+        tvshows.sort();
+
+        const window = new WindowListContent("watchlist", ["Film", "TV Shows", "Anime"], [movies, tvshows, anime]);
         window.display();
     });
 }
