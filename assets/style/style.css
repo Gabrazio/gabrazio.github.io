@@ -145,3 +145,34 @@ body {
 .window .content .list ul {
     margin-top: 0.5rem;
 }
+
+@media screen and (max-height: 400px) {
+    #title {
+        display: none;
+    }
+
+    .window {
+        width: 50%;
+        height: 75%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #title {
+        font-size: 4rem;
+    }
+
+    .button {
+        font-size: 2.5rem;
+    }
+
+    .window {
+        width: 35%;
+    }
+}
+
+@media screen and (min-width: 650px) and (max-width: 1023px) {
+    #title {
+        font-size: 3.5rem;
+    }
+}
