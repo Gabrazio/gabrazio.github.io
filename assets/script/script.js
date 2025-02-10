@@ -266,10 +266,10 @@ function showMenu() {
     notes.addEventListener("click", playError);
     projects.addEventListener("click", playError);
     watchlist.addEventListener("click", () => {
-        let movies = ["Home Alone", "Dead Poets Society", "Rise of the Guardians", "Diary of a Wimpy Kid", "Scott Pilgrim vs. the World", "Wreck-It Ralph", "Kung Fu Panda", "Over the Hedge", "A Christmas Carol", "Elf", "The Polar Express", "How the Grinch Stole Christmas", "John Wick", "Shrek", "Back to the Future", "Jojo Rabbit"];
+        let movies = ["Ted", "Spider-Man", "The Matrix", "Deadpool", "A Clockwork Orange", "Yes Man", "Home Alone", "Dead Poets Society", "Rise of the Guardians", "Diary of a Wimpy Kid", "Scott Pilgrim vs. the World", "Wreck-It Ralph", "Kung Fu Panda", "Over the Hedge", "A Christmas Carol", "Elf", "The Polar Express", "How the Grinch Stole Christmas", "John Wick", "Shrek", "Back to the Future", "Jojo Rabbit"];
         movies.sort();
         
-        let tvshows = ["Ted", "Spider-Man", "The Matrix", "Deadpool", "A Clockwork Orange", "Yes Man", "The Big Bang Theory", "Malcolm in the Middle", "Breaking Bad", "Squid Game", "The Office"];
+        let tvshows = ["The Big Bang Theory", "Malcolm in the Middle", "Breaking Bad", "Squid Game", "The Office"];
         tvshows.sort();
 
         let anime = ["Howl's Moving Castle", "To the Forest of Firefly Lights", "Death Note", "Death Parade"];

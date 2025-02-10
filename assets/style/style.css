@@ -65,7 +65,7 @@ body {
 
 .window {
     position: absolute;
-    width: 50%;
+    width: 75%;
     max-height: 20rem;
     background-color: midnightblue;
     font-family: Pixelify;
