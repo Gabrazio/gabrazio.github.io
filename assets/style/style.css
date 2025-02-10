@@ -6,7 +6,7 @@
 html, body {
     margin: 0;
     height: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
     cursor: url(../cursor/Smooth/SmoothArrow.cur), default;
 }
 
@@ -61,4 +61,70 @@ body {
     background: red;
     color: yellow;
     cursor: url(../cursor/Smooth/SmoothHand.cur), pointer;
+}
+
+.window {
+    position: absolute;
+    width: 50%;
+    max-height: 20rem;
+    background-color: midnightblue;
+    font-family: Pixelify;
+    box-shadow: -0.2rem 0 0 0 black,
+                0.2rem 0 0 0 black,
+                0 -0.2rem 0 0 black,
+                0 0.2rem 0 0 black;
+    display: flex;
+    flex-direction: column;
+}
+
+.window .top {
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "title close";
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.7rem;
+}
+
+.window .top .title {
+    grid-area: title;
+}
+
+.window .top .close {
+    grid-area: close;
+    color: red;
+    width: fit-content;
+}
+
+.window .top .close:hover {
+    cursor: url(../cursor/Smooth/SmoothHand.cur), pointer;
+    color: gold;
+}
+
+.window .content {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding: 0.7rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+
+.window .content .title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.window .content .list {
+    font-size: 1.2rem;
+}
+
+.window .content .list ul {
+    margin-top: 0.5rem;
 }
