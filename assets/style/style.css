@@ -44,12 +44,14 @@ body {
     font-size: 1.8rem;
     font-family: Pixelify, sans-serif;
     text-transform: uppercase;
-    border: 0.1rem black solid;
-    border-radius: 0.5rem;;
+    box-shadow: -0.2rem 0 0 0 black,
+                0.2rem 0 0 0 black,
+                0 -0.2rem 0 0 black,
+                0 0.2rem 0 0 black;
     padding-left: 0.7rem;
     padding-right: 0.7rem;
     font-weight: 400;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     text-align: center;
     background-color: white;
     transition: background 0.2s ease, color 0.2s ease;
