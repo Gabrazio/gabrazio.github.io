@@ -139,6 +139,7 @@ body {
 
 .window .content .list ul {
     margin-top: 0.5rem;
+    list-style-type: square;
 }
 
 .window .content .list:last-child ul {
