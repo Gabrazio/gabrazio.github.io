@@ -269,13 +269,13 @@ function showMenu() {
         let movies = ["Ted", "Spider-Man", "The Matrix", "Deadpool", "A Clockwork Orange", "Yes Man", "Home Alone", "Dead Poets Society", "Rise of the Guardians", "Diary of a Wimpy Kid", "Scott Pilgrim vs. the World", "Wreck-It Ralph", "Kung Fu Panda", "Over the Hedge", "A Christmas Carol", "Elf", "The Polar Express", "How the Grinch Stole Christmas", "John Wick", "Shrek", "Back to the Future", "Jojo Rabbit"];
         movies.sort();
         
-        let tvshows = ["The Big Bang Theory", "Malcolm in the Middle", "Breaking Bad", "Squid Game", "The Office"];
-        tvshows.sort();
+        let tvseries = ["The Boys", "Alice in Borderland", "Money Heist", "Stranger Things", "The Big Bang Theory", "Malcolm in the Middle", "Breaking Bad", "Squid Game", "The Office"];
+        tvseries.sort();
 
         let anime = ["Howl's Moving Castle", "To the Forest of Firefly Lights", "Death Note", "Death Parade"];
-        tvshows.sort();
+        tvseries.sort();
 
-        const window = new WindowListContent("watchlist", ["Film", "TV Shows", "Anime"], [movies, tvshows, anime]);
+        const window = new WindowListContent("watchlist", ["Film", "TV Series", "Anime"], [movies, tvseries, anime]);
         window.display();
     });
 }
