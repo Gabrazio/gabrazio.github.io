@@ -90,6 +90,10 @@ body {
     padding: 0.7rem;
 }
 
+.window .top:hover {
+    cursor: url(../cursor/Smooth/SmoothMove.cur), move;
+}
+
 .window .top .title {
     grid-area: title;
 }
