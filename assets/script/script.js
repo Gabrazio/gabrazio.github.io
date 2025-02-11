@@ -1,5 +1,3 @@
-const select = new Audio("assets/audio/select.wav");
-const error = new Audio("assets/audio/error.wav");
 const open = new Audio("assets/audio/open.wav");
 const close = new Audio("assets/audio/close.wav");
 
@@ -169,9 +167,9 @@ function removeButton(button) {
 }
 
 function playSelect() {
-    select.pause();
-    select.currentTime = 0;
-    select.play();
+    open.pause();
+    open.currentTime = 0;
+    open.play();
 }
 
 function playOpen() {
@@ -187,9 +185,9 @@ function playClose() {
 }
 
 function playError() {
-    error.pause();
-    error.currentTime = 0;
-    error.play();
+    close.pause();
+    close.currentTime = 0;
+    close.play();
     alert("¯\\_(ツ)_/¯");
 }
 
