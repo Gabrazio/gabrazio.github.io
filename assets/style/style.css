@@ -76,8 +76,8 @@ body {
 
 .window {
     position: absolute;
-    width: clamp(40%, 75%, 90%);
-    max-height: 60vh;
+    width: clamp(40%, 60%, 70%);
+    max-height: 50vh;
     background-color: midnightblue;
     font-family: Pixelify;
     box-shadow: -0.2rem 0 0 0 black,
@@ -166,16 +166,21 @@ body {
     #title {
         display: none;
     }
-    
+
+    .window {
+        max-height: 60vh;
+    }
+
+    /*
     .button {
-        font-size: clamp(1.2rem, 3vh, 2.5rem);
+        /*font-size: clamp(1.2rem, 3vh, 2.5rem);
     }
 
     .window .content .title {
-        font-size: clamp(1.5rem, 3vh, 2.1rem);
+        /*font-size: clamp(1.5rem, 3vh, 2.1rem);
     }
     
     .window .content .list {
-        font-size: clamp(1rem, 2.5vh, 1.5rem);
-    }
+        /*font-size: clamp(1rem, 2.5vh, 1.5rem);
+    }*/
 }
