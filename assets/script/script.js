@@ -334,19 +334,16 @@ function showMenu() {
             "Kill Bill: Vol. 2", "Mothers' Instinct", "The Wizard of Oz", "Super", 
             "Austin Powers: International Man of Mystery", "The 40-Year-Old Virgin", 
             "Central Intelligence", "The Green Mile", "The Perks of Being a Wallflower", 
-            "Whiplash"];
+            "Whiplash", "Howl's Moving Castle", "To the Forest of Firefly Lights"];
         movies.sort();
         
         let tvseries = ["The Office", "Malcolm in the Middle", "Death Note", "The Big Bang Theory", 
             "Sex Education", "Breaking Bad", "How I Met Your Mother", "Fallout", 
             "The Simpsons", "The Boys", "Gen V", "Stranger Things", "The Umbrella Academy", 
-            "Arcane", "Invincible", "Superstore", "Chernobyl", "Atypical", "Squid Game", "Young Sheldon"];
+            "Arcane", "Invincible", "Superstore", "Chernobyl", "Atypical", "Squid Game", "Young Sheldon", "Death Note", "Death Parade"];
         tvseries.sort();
 
-        let anime = ["Howl's Moving Castle", "To the Forest of Firefly Lights", "Death Note", "Death Parade"];
-        tvseries.sort();
-
-        const window = new WindowListContent("watchlist", ["Film", "TV Series", "Anime"], [movies, tvseries, anime]);
+        const window = new WindowListContent("watchlist", ["Film", "TV Series"], [movies, tvseries]);
         window.display();
     });
 }

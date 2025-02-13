@@ -8,6 +8,7 @@ html, body {
     height: 100%;
     overflow: hidden;
     cursor: url(../cursor/Smooth/SmoothArrow.cur), default;
+    padding: 0.5rem;
 }
 
 body {
@@ -31,7 +32,8 @@ body {
 
 #title {
     color: gold;
-    font-size: clamp(2rem, 5vw, 4rem);
+    /*font-size: clamp(2rem, 5vw, 4rem);*/
+    font-size: calc(3vw + 3vh);
     font-family: PressStart2P, sans-serif;
     font-weight: 600;
     text-transform: uppercase;
@@ -39,8 +41,15 @@ body {
     text-align: center;
 }
 
+#buttons {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+}
+
 .button {
-    font-size: clamp(1.2rem, 3vw, 2.5rem);
+    /*font-size: clamp(1.2rem, 3vw, 2.5rem);*/
+    font-size: calc(2vw + 2vh);
     font-family: Pixelify, sans-serif;
     text-transform: uppercase;
     box-shadow: -0.2rem 0 0 0 black,
@@ -88,6 +97,7 @@ body {
     text-transform: uppercase;
     text-align: center;
     padding: 0.7rem;
+    font-size: calc(1.5vw + 1.5vh);
 }
 
 .window .top:hover {
@@ -131,14 +141,16 @@ body {
 }
 
 .window .content .title {
-    font-size: clamp(1.5rem, 3vw, 2.1rem);
+    /*font-size: clamp(1.5rem, 3vw, 2.1rem);*/
+    font-size: calc(2vw + 2vh);
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: underline;
 }
 
 .window .content .list {
-    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    /*font-size: clamp(1rem, 2.5vw, 1.5rem);*/
+    font-size: calc(1.2vw + 1.2vh);
 }
 
 .window .content .list ul {
