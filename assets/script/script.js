@@ -200,20 +200,24 @@ function showSocial() {
 
     let instagram = document.createElement("div");
     let telegram = document.createElement("div");
+    let steam = document.createElement("div");
     let back = document.createElement("div");
                 
     instagram.className = "button";
     telegram.className = "button";
+    steam.className = "button";
     back.className = "button";
                 
     instagram.textContent = "instagram";
     telegram.textContent = "telegram";
+    steam.textContent = "steam";
     back.textContent = "back";
 
     let buttons = document.getElementById("buttons");
 
     buttons.appendChild(instagram);
     buttons.appendChild(telegram);
+    buttons.appendChild(steam);
     buttons.appendChild(back);
 
     instagram.addEventListener("click", () => {
@@ -226,7 +230,12 @@ function showSocial() {
         location.href = "https://t.me/Gabrazio";
     });
 
-     back.addEventListener("click", showMenu);
+    steam.addEventListener("click", () => {
+        playSelect();
+        location.href = "https://steamcommunity.com/id/Gabrazio/";
+    });
+
+    back.addEventListener("click", showMenu);
 }
 
 function showMenu() {
