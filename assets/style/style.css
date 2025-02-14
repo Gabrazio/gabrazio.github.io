@@ -56,9 +56,11 @@ body {
                 0.2rem 0 0 0 black,
                 0 -0.2rem 0 0 black,
                 0 0.2rem 0 0 black;
-    padding: 0.5rem 1rem;
+    /*padding: 0.5rem 1rem;*/
+    padding: calc(0.1vw + 0.1vh) calc(1vw + 1vh);
     font-weight: 400;
-    margin-bottom: 1.5rem;
+    /*margin-bottom: 1.5rem;*/
+    margin-bottom: calc(1.5vw + 1.5vh);
     text-align: center;
     background-color: white;
     transition: background 0.2s ease, color 0.2s ease;
